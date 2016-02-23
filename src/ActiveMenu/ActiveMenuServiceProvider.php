@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\ActiveMenu;
+namespace ActiveMenu;
 
 use Illuminate\Support\ServiceProvider;
-use App\Helpers\ActiveMenu\ActiveMenu;
+use ActiveMenu\ActiveMenu;
 
 class ActiveMenuServiceProvider extends ServiceProvider
 {
@@ -27,13 +27,11 @@ class ActiveMenuServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            'App\Helpers\ActiveMenu\Contracts\ActiveMenuContract',
-            'App\Helpers\ActiveMenu\ActiveMenu'
+            'ActiveMenu\Contracts\ActiveMenuContract',
+            'ActiveMenu\ActiveMenu'
         );
-        /*$this->app->bind('App\Helpers\ActiveMenu\Contracts\ActiveMenuContract', function () {
-
+        /*$this->app->bind('ActiveMenu\Contracts\ActiveMenuContract', function () {
             return new ActiveMenu();
-
         });
         */
     }
@@ -46,7 +44,7 @@ class ActiveMenuServiceProvider extends ServiceProvider
     /*
     public function provides()
     {
-        return ['App\Helpers\ActiveMenu\Contracts\ActiveMenuContract'];
+        return ['ActiveMenu\Contracts\ActiveMenuContract'];
     }
     */
 }

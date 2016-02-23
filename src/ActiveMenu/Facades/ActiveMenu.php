@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\ActiveMenu\Facades;
+namespace ActiveMenu\Facades;
 use Illuminate\Support\Facades\Facade;
 
 class ActiveMenu extends Facade{

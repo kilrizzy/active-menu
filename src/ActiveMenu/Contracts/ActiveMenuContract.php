@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\ActiveMenu\Contracts;
+namespace ActiveMenu\Contracts;
 
 Interface ActiveMenuContract
 {

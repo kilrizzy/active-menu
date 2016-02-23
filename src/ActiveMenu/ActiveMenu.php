@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\ActiveMenu;
+namespace ActiveMenu;
 
-use App\Helpers\ActiveMenu\Contracts\ActiveMenuContract;
-use Request;
+use ActiveMenu\Contracts\ActiveMenuContract;
+use Illuminate\Support\Facades\Request;
 
 class ActiveMenu implements ActiveMenuContract
 {
