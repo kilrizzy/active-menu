@@ -1,0 +1,39 @@
+{
+  "name": "kilrizzy/active-menu",
+  "type": "library",
+  "description": "Laravel link helper to detect if menu item is currently active",
+  "keywords": [
+    "menu",
+    "url",
+    "active-menu"
+  ],
+  "homepage": "https://github.com/kilrizzy/active-menu",
+  "support": {
+    "issues": "https://github.com/kilrizzy/active-menu/issues",
+    "source": "https://github.com/kilrizzy/active-menu"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jeff Kilroy",
+      "email": "jeffkilroy@gmail.com",
+      "homepage": "http://jeffkilroy.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0|~5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ActiveMenu\\": "src/ActiveMenu/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
